@@ -1,4 +1,4 @@
-LiNUX
+**LiNUX**
 ques.Create the following users,groups and group membership
 -A group named sysadm
 -A user "harry" who belongs to sysadm as a secondary group.
@@ -36,7 +36,7 @@ TOMCAT-SERVER
 dev-server = t2.micro , size = 12
 jenkins-server = t2.medium , size = 8
 tomcat-server = t2,micro , size = 10
-ON DEV-SERVER 
+***ON DEV-SERVER 
 sudo su -
 set hostname - dev-server.example.com
 bash
@@ -59,7 +59,7 @@ CREATE A PUBLIC REPO AND CLONE
    15  git remote remove origin
    16  git remote add origin git@github.com:mansi-lti/tomcat.git
    17  git push origin main
-CONNECT TO JENKINS SERVER
+****CONNECT TO JENKINS SERVER
 sudo su -
 hostname
 bash
@@ -74,7 +74,7 @@ bash
 go to the browser and copy ip-address:8080 and create webhook
 after sign in install plugins like maven , deploy to container , github integration then restart the jenkins
 yum install maven
-CONNECT TO APACHE SERVER
+****CONNECT TO Tomcat SERVER
 sudo su -
 hostname = apache.example.com
 bash
@@ -92,7 +92,6 @@ next move to apache server
  cd bin
   ll
   chmod +x startup.sh
-  chmod =x shutdown.sh
   chmod +x shutdown.sh
 open the medium and follow the steps
 after runnig the ./startup copy the ip address with port no 8080
